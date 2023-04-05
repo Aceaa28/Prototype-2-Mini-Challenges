@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour 
+{
 	public float horizontalInput;
 	public float verticalInput;
 	public float speed = 10.0f;
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 			// Launch a projectile from the player
 			Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 		}
+
+
 
 		// Keep the player in bounds
 		if (transform.position.x < -xRange)
