@@ -27,13 +27,17 @@ public class GameManager : MonoBehaviour
 
     public void UpdateLives()
     {
-        lives -= 1;
-        Debug.Log("lives: " + lives);
 
         if(lives == 0)
         {
             Debug.Log("Game Over!");
             lives = 0;
+        }
+
+        else
+        {
+            lives -= 1;
+            Debug.Log("lives: " + lives);
         }
     }
 }
